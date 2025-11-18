@@ -104,5 +104,3 @@ https://www.ultraboardgames.com/bang/gamerules.php
   - Each player’s role  
 
 ---
-
-If you want, I can also format this for GitHub with badges, images, or installation instructions!
