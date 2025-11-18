@@ -1,0 +1,31 @@
+﻿<Properties StartupConfiguration="{E9074A87-190D-4709-B1E3-04B64DEDE06A}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="BangOnline/BlueCardEffectExecutor.cs">
+    <Files>
+      <File FileName="BangOnline/BlueCardEffectExecutor.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="BangOnline" expanded="True">
+            <Node name="BangOnline" expanded="True">
+              <Node name="BlueCardEffectExecutor.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State>
+          <Value>gs</Value>
+          <Value> gs.DeckOfCards.UnusedCards</Value>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.BangOnline PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|anycpu" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

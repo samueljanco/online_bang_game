@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">anycpu</Platform>
+    <ProjectGuid>{E9074A87-190D-4709-B1E3-04B64DEDE06A}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>BangOnline</RootNamespace>
+    <AssemblyName>BangOnline</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|anycpu' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ExternalConsole>true</ExternalConsole>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|anycpu' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ExternalConsole>true</ExternalConsole>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="mscorlib" />
+    <Reference Include="System.Numerics.Vectors">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Runtime.CompilerServices.Unsafe">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.5.0.0\lib\net45\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Memory">
+      <HintPath>..\packages\System.Memory.4.5.4\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encodings.Web">
+      <HintPath>..\packages\System.Text.Encodings.Web.5.0.1\lib\net461\System.Text.Encodings.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces">
+      <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.5.0.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple">
+      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Json">
+      <HintPath>..\packages\System.Text.Json.5.0.2\lib\net461\System.Text.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="GameState.cs" />
+    <Compile Include="PlayerInfo.cs" />
+    <Compile Include="GameMaterial.cs" />
+    <Compile Include="Character.cs" />
+    <Compile Include="MoveExecutor.cs" />
+    <Compile Include="UIFormater.cs" />
+    <Compile Include="Role.cs" />
+    <Compile Include="GameEvent.cs" />
+    <Compile Include="MoveValidator.cs" />
+    <Compile Include="BlueCardEffectExecutor.cs" />
+    <Compile Include="Game.cs" />
+    <Compile Include="Client.cs" />
+    <Compile Include="Server.cs" />
+    <Compile Include="Card.cs" />
+    <Compile Include="CardList.cs" />
+    <Compile Include="Cards\BangCard.cs" />
+    <Compile Include="Cards\BarrelCard.cs" />
+    <Compile Include="Cards\BeerCard.cs" />
+    <Compile Include="Cards\CatBalouCard.cs" />
+    <Compile Include="Cards\DuelCard.cs" />
+    <Compile Include="Cards\DynamiteCard.cs" />
+    <Compile Include="Cards\EmporioCard.cs" />
+    <Compile Include="Cards\GatlingCard.cs" />
+    <Compile Include="Cards\IndiansCard.cs" />
+    <Compile Include="Cards\JailCard.cs" />
+    <Compile Include="Cards\MissedCard.cs" />
+    <Compile Include="Cards\MustangCard.cs" />
+    <Compile Include="Cards\PanicCard.cs" />
+    <Compile Include="Cards\RemingtonCard.cs" />
+    <Compile Include="Cards\RevCarabineCard.cs" />
+    <Compile Include="Cards\SalonCard.cs" />
+    <Compile Include="Cards\StagecoachCard.cs" />
+    <Compile Include="Cards\ScopeCard.cs" />
+    <Compile Include="Cards\SchofieldCard.cs" />
+    <Compile Include="Cards\VolcanicCard.cs" />
+    <Compile Include="Cards\WellsFargoCard.cs" />
+    <Compile Include="Cards\WinchesterCard.cs" />
+    <Compile Include="Characters\BartCassidy.cs" />
+    <Compile Include="Characters\BlackJack.cs" />
+    <Compile Include="Characters\ElGringo.cs" />
+    <Compile Include="Characters\JesseJones.cs" />
+    <Compile Include="Characters\Jourdonais.cs" />
+    <Compile Include="Characters\KitCarlson.cs" />
+    <Compile Include="Characters\PaulRegret.cs" />
+    <Compile Include="Characters\RoseDoolan.cs" />
+    <Compile Include="Characters\PedroRamirez.cs" />
+    <Compile Include="Characters\SlabTheKiller.cs" />
+    <Compile Include="Characters\SuzyLafayette.cs" />
+    <Compile Include="Characters\VultureSam.cs" />
+    <Compile Include="Characters\WillyTheKid.cs" />
+    <Compile Include="Characters\CalamityJanet.cs" />
+    <Compile Include="Characters\LuckyDuke.cs" />
+    <Compile Include="DeckOfCards.cs" />
+    <Compile Include="InputValidator.cs" />
+    <Compile Include="Characters\SidKetchum.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Cards\" />
+    <Folder Include="Characters\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>
